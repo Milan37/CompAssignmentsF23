@@ -6,15 +6,25 @@
 
 <body>
     <script>
-        // insert your code in this script tag!
-
-        function square(number) {
-            return 0;
+        function square(i) {
+            if (typeof i === 'number')
+            {
+                return i * i;
+            }
+            return -1;
         }
 
-
         function numberString(i) {
-            return ""; 
+            let result = "";
+            if (Number.isInteger(number) && number > 0)
+            {
+                for (let n = 1; n <= i; n++)
+                {
+                    result += n.toString();
+                }
+                return result;
+            }
+            return -1;
         }
     </script>
 </body>
